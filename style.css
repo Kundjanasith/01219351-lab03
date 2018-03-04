@@ -1,0 +1,40 @@
+*{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 0; 
+    padding:0;
+    position: relative; 
+}
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 1000%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5; /* Firefox */
+}
+h2{
+    color: white;
+    /*text-align: center;*/
+    font-size: 500%;
+}
+input{
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-align: center;
+    border-color: transparent;
+    font-size: 350%;
+}
+button{
+    /*border-radius: 15px 50px;*/
+    /*border-radius: 50px;*/
+    border-color: black;
+    color: white;
+    background-color: black;
+    font-size: 200%;
+}

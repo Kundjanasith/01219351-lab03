@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Q/A</title>
-        <style></style>
+        <title>Trivia</title>
+        <link rel="icon" href="img/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <style>
+            @import url("style.css");
+        </style>
     </head>
     <body>
-        <h1 id="name_web"></h1>
-        <h3>Please choose the number of questions</h3>
-        <div id="first_section"></button>
-        <div id="second_section"></button>
+        <div style="width: 100%; text-align: center;">
+            <hh id="trivia_title" style="font-size: 1000%; text-shadow: 0 0 75px #555555;">Trivia</hh>
+        </div>
+        <div style="width: 100%; text-align: center; ">
+            <input id="inputName" onChange="inputChange(event)" onKeyUp="inputChange(event)"  maxlength="10" style="text-shadow: 0 0 75px #555555; box-shadow: 0 0 50px blue;" placeholder="Please input your name">
+        </div>
+        <br/><br/>
+        <div style="width: 100%; text-align: center;">
+            <button style="box-shadow: 0 0 20px blue;">&nbsp;&nbsp;Clear&nbsp;&nbsp;</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button style="box-shadow: 0 0 20px blue;">&nbsp;Confirm&nbsp;</button>
+        </div>
+        <!--<h3 id="pls">Please choose the number of questions</h3>-->
+        <!--<div id="zero_section">
+            
+        </div>-->
+        <!--<div id="first_section">
+            <button id="Q05" onclick="selectNumQuestion(5)">5 Questions</button>
+            <button id="Q10" onclick="selectNumQuestion(10)">10 Questions</button>
+            <button id="Q15" onclick="selectNumQuestion(15)">15 Questions</button>
+        </div>
+        <div id="second_section" style="display: none;">
+            <h4 id="Q00" >Question_0</h4>
+            <h5 id="A01" >Answer_0_1</h5>
+            <h5 id="A02" >Answer_0_2</h5>
+            <h5 id="A03" >Answer_0_3</h5>
+            <h5 id="A04" >Answer_0_4</h5>
+            <button id="btn" onclick="submitAnswer()">Submit</button>
+        </div>
+        <div id="third_section">
+            
+        </div>-->
     </body>
     <script src='data/questions.json'></script>   
     <script src='main.js'></script>
