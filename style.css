@@ -5,34 +5,47 @@
     padding:0;
     position: relative; 
 }
+.center-z {
+    width: 100%; 
+    text-align: center;
+}
+html, body {
+    margin: 0; 
+    padding: 2%; 
+}
+h1 {
+    text-align: center;
+}
 body{
     background-color: black;
 }
 h1{
     color: white;
     text-align: center;
-    font-size: 1000%;
+    font-size: 10%;
+    text-shadow: 0 0 20px yellow;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     color: white;
-    opacity: 0.5; /* Firefox */
+    opacity: 0.5; 
 }
 h2{
     color: white;
-    /*text-align: center;*/
     font-size: 500%;
 }
 input{
+    border-radius: 30px;
     background-color: black;
     text-align: center;
     color: white;
     text-align: center;
     border-color: transparent;
-    font-size: 350%;
+    font-size: 100%;
+    text-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px yellow;
 }
 button{
-    /*border-radius: 15px 50px;*/
-    /*border-radius: 50px;*/
+    border-radius: 25px;
     border-color: black;
     color: white;
     background-color: black;
