@@ -35,13 +35,36 @@ setInterval(function(){
 
 // document.getElementById("trivia_title")
 
-// function inputChange(e) {
-//    console.log(document.getElementById("inputName").value);
-//   }
+function inputChange(e) {
+   console.log(document.getElementById("inputName").value);
+   var r = document.getElementById("inputName").value.length
+   if(r>10){
+        alert("Maximum name length is 10.")
+        document.getElementById("inputName").value = document.getElementById("inputName").value.substring(0,10)
+   }
+  }
+
+function clearA(){
+    document.getElementById("inputName").value = ""
+}
+function confirmA(){
+    if(document.getElementById("inputName").value.length>0){
+        trivia_title.remove()
+        inputName.remove()
+        document.getElementById("clearBtn").remove()
+        document.getElementById("confirmBtn").remove()
+    }
+}
 
 // function mouseO(e){
-//     console.log(e)
-//     e.setAttribute('style','box-shadow: 0 0 100px yellow;')
+//     console.log("OO")
+//     e.setAttribute('style','color: red;')
+//     e.setAttribute('style','box-shadow: 0 0 20px yellow;')
+// }
+// function mouseI(e){
+//     console.log("II")
+//     e.setAttribute('style','color: green;')
+//     e.setAttribute('style','box-shadow: 0 0 20px yellow;')
 // }
 
 // counter_q = 1

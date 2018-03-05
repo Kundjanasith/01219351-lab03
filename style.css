@@ -47,7 +47,15 @@ input{
 button{
     border-radius: 25px;
     border-color: black;
-    color: white;
     background-color: black;
     font-size: 200%;
 }
+/*button:hover {
+ color: yellow;
+}
+button[disabled]:hover {
+    background: red;
+}
+button:hover {
+    background: lime;
+}*/
