@@ -49,7 +49,7 @@ function clearA(){
 }
 var user_name = "XX"
 
-var score = 0
+var score = 1
 // function checkTime(i) {
 //   if (i < 10) {
 //     i = "0" + i;
@@ -89,8 +89,28 @@ function checkSecond(sec) {
   return sec;
 }
 
+function chooseA(e) {
+    console.log(e)
+}
+var Qnum = 0
+var resQ = []
+function submitAns(){
+    var sc = document.getElementById("quest").innerHTML.split(":")[1].split("/")[0] 
+    sc = parseInt(sc)
+    sc = sc + 1
+    if(sc<=Qnum){
+        document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
+        document.getElementById("A1").innerText = resQ[sc-1].Answer1
+        document.getElementById("A2").innerText = resQ[sc-1].Answer2
+        document.getElementById("A3").innerText = resQ[sc-1].Answer3
+        document.getElementById("A4").innerText = resQ[sc-1].Answer4
+        document.getElementById("timer").innerHTML = 02 + ":" + 00;
+        document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum
+    }
+}
 
 function question(num){
+    Qnum = num
     console.log(num)
     contentZ = document.getElementById("content-z")
     while (contentZ.firstChild) {
@@ -107,26 +127,29 @@ function question(num){
     document.getElementById("content-zz").appendChild(uName);
     document.getElementById("content-zz").appendChild(document.createElement('br'));
     var uName0 = document.createElement('h13');
+    uName0.setAttribute('id','quest');
     uName0.setAttribute('style','font-size: 150%')
-    uName0.innerHTML = 'Score : '+score+' / '+num
+    uName0.innerHTML = 'Question : '+score+' / '+num
     document.getElementById("content-zz").appendChild(uName0);
     document.getElementById("content-zz").appendChild(document.createElement('br'));
     var uName0 = document.createElement('h13');
     uName0.setAttribute('style','font-size: 100%')
     uName0.innerHTML = 'Remaining time : '
     document.getElementById("content-zz").appendChild(uName0);
-
     var uName0 = document.createElement('h13');
     uName0.setAttribute('style','font-size: 100%')
     uName0.setAttribute('id','timer')
     uName0.innerHTML = 02 + ":" + 00;
     document.getElementById("content-zz").appendChild(uName0);
     startTimer();
-
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    //##########
     content = JSON.parse(JSON.stringify(questions));
     console.log(content)
     console.log(Object.keys(content).length)
     all_questions = []
+    
     // console.log(num)
     // for(i  = 0; i < num; i++ ){
     //     console.log(i)
@@ -140,7 +163,7 @@ function question(num){
     for(i  = 0; i <= Object.keys(content).length; i++ ){
         all_questions.push(content["Q"+i])
     }
-    resQ = []
+    
     console.log(all_questions[15])
     for(i = 0; i< num; i++){
         inn = ( (Math.random()) * (all_questions.length-1) ) + 1
@@ -150,6 +173,54 @@ function question(num){
         
     }
     console.log(resQ)
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','Q0');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: text;');
+    // uName0.disabled = true;
+    uName0.innerText = '1) '+resQ[0].Question
+    document.getElementById("content-z1").appendChild(uName0);
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','A1');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+    uName0.setAttribute('onclick','chooseA(1)');
+    uName0.innerText = resQ[0].Answer1
+    document.getElementById("content-z1").appendChild(uName0);
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','A2');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+    uName0.setAttribute('onclick','chooseA(2)');
+    uName0.innerText = resQ[0].Answer2
+    document.getElementById("content-z1").appendChild(uName0);
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','A3');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+    uName0.setAttribute('onclick','chooseA(3)');
+    uName0.innerText = resQ[0].Answer3
+    document.getElementById("content-z1").appendChild(uName0);
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','A4');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+    uName0.setAttribute('onclick','chooseA(4)');
+    uName0.innerText = resQ[0].Answer4
+    document.getElementById("content-z1").appendChild(uName0);
+    // button 
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    var uName0 = document.createElement('button');
+    uName0.setAttribute('id','submit');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px green; text-align: center; color: white;');
+    uName0.setAttribute('onclick','submitAns()');
+    uName0.innerHTML = 'Submit'
+    document.getElementById("content-z1").appendChild(uName0);
 }
 
 
