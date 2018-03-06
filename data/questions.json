@@ -1,114 +1,122 @@
 questions = {
     "Q01": {
-        "Question": "Q01?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "The common element which describe the web page, is ?",
+        "Answer1": "heading",
+        "Answer2": "paragraph",
+        "Answer3": "list",
+        "Answer4": "All of these",
+        "Solution": "All of these"
     },
     "Q02": {
-        "Question": "Q02?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "HTML stands for?",
+        "Answer1": "Hyper Text Markup Language",
+        "Answer2": "High Text Markup Language",
+        "Answer3": "Hyper Tabular Markup Language",
+        "Answer4": "None of these",
+        "Solution": "Hyper Text Markup Language"
     },
     "Q03": {
-        "Question": "Q03?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "which of the following tag is used to mark a begining of paragraph ?",
+        "Answer1": "<TD>",
+        "Answer2": "<br>",
+        "Answer3": "<P>",
+        "Answer4": "<TR>",
+        "Solution": "<P>"
     },
     "Q04": {
-        "Question": "Q04?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "From which tag descriptive list starts ?",
+        "Answer1": "<LL>",
+        "Answer2": "<DD>",
+        "Answer3": "<DL>",
+        "Answer4": "<DS>",
+        "Solution": "<DL>"
     },
     "Q05": {
-        "Question": "Q05?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "Correct HTML tag for the largest heading ?",
+        "Answer1": "<head>",
+        "Answer2": "<h6>",
+        "Answer3": "<heading>",
+        "Answer4": "<h1>",
+        "Solution": "<h1>"
     },
     "Q06": {
-        "Question": "Q06?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
-    },
-    "Q06": {
-        "Question": "Q06?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "The attribute of <form> tag ?",
+        "Answer1": "Method",
+        "Answer2": "Action",
+        "Answer3": "Both method and action",
+        "Answer4": "None of these",
+        "Solution": "Both method and action"
     },
     "Q07": {
-        "Question": "Q07?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "Markup tags tell the web browser ?",
+        "Answer1": "How to organise the page",
+        "Answer2": "How to display the page",
+        "Answer3": "How to display message box on page",
+        "Answer4": "None of these",
+        "Solution": "How to display the page"
     },
     "Q08": {
-        "Question": "Q08?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "www is based on which model ?",
+        "Answer1": "Local-server",
+        "Answer2": "Client-server",
+        "Answer3": "3-tier",
+        "Answer4": "None of these",
+        "Solution": "Client-server"
     },
     "Q09": {
-        "Question": "Q09?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "What are Empty elements and is it valid ?",
+        "Answer1": "No, there is no such terms as Empty Element",
+        "Answer2": "Empty elements are element with no data",
+        "Answer3": "No, it is not valid to use Empty Element",
+        "Answer4": "None of these",
+        "Solution": "Empty elements are element with no data"
     },
     "Q10": {
-        "Question": "Q10?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "Which of the following attributes of text box control allow to limit the maximum character ?",
+        "Answer1": "size",
+        "Answer2": "len",
+        "Answer3": "maxlength",
+        "Answer4": "all of these",
+        "Solution": "maxlength"
     },
     "Q11": {
-        "Question": "Q11?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "Web pages starts with which ofthe following tag ?",
+        "Answer1": "<Body>",
+        "Answer2": "<Title>",
+        "Answer3": "<HTML>",
+        "Answer4": "<Form>",
+        "Solution": "<HTML>"
     },
     "Q12": {
-        "Question": "Q12?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "HTML is a subset of",
+        "Answer1": "SGMT",
+        "Answer2": "SGML",
+        "Answer3": "SGMD",
+        "Answer4": "None of these",
+        "Solution": "SGML"
     },
     "Q13": {
-        "Question": "Q13?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "Which of the following is a container ?",
+        "Answer1": "<SELECT>",
+        "Answer2": "<Value>",
+        "Answer3": "<INPUT>",
+        "Answer4": "<BODY>",
+        "Solution": "<SELECT>"
     },
     "Q14": {
-        "Question": "Q14?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "The attribute, which define the relationship between current document and HREF'ed URL is ?",
+        "Answer1": "REL",
+        "Answer2": "URL",
+        "Answer3": "REV",
+        "Answer4": "all of these",
+        "Solution": "REL"
     },
     "Q15": {
-        "Question": "Q15?",
-        "Answer1": "A_ans1",
-        "Answer2": "A_ans2",
-        "Answer3": "A_ans3",
-        "Answer4": "A_ans4"
+        "Question": "<DT> tag is designed to fit a single line of our web page but <DD> tag will accept a",
+        "Answer1": "line of text",
+        "Answer2": "full paragraph",
+        "Answer3": "word",
+        "Answer4": "request",
+        "Solution": "full paragraph"
     }
 }
