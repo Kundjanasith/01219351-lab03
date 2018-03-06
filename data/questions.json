@@ -1,5 +1,5 @@
 questions = {
-    "Q01": {
+    "Q1": {
         "Question": "The common element which describe the web page, is ?",
         "Answer1": "heading",
         "Answer2": "paragraph",
@@ -7,7 +7,7 @@ questions = {
         "Answer4": "All of these",
         "Solution": "All of these"
     },
-    "Q02": {
+    "Q2": {
         "Question": "HTML stands for?",
         "Answer1": "Hyper Text Markup Language",
         "Answer2": "High Text Markup Language",
@@ -15,7 +15,7 @@ questions = {
         "Answer4": "None of these",
         "Solution": "Hyper Text Markup Language"
     },
-    "Q03": {
+    "Q3": {
         "Question": "which of the following tag is used to mark a begining of paragraph ?",
         "Answer1": "<TD>",
         "Answer2": "<br>",
@@ -23,7 +23,7 @@ questions = {
         "Answer4": "<TR>",
         "Solution": "<P>"
     },
-    "Q04": {
+    "Q4": {
         "Question": "From which tag descriptive list starts ?",
         "Answer1": "<LL>",
         "Answer2": "<DD>",
@@ -31,7 +31,7 @@ questions = {
         "Answer4": "<DS>",
         "Solution": "<DL>"
     },
-    "Q05": {
+    "Q5": {
         "Question": "Correct HTML tag for the largest heading ?",
         "Answer1": "<head>",
         "Answer2": "<h6>",
@@ -39,7 +39,7 @@ questions = {
         "Answer4": "<h1>",
         "Solution": "<h1>"
     },
-    "Q06": {
+    "Q6": {
         "Question": "The attribute of <form> tag ?",
         "Answer1": "Method",
         "Answer2": "Action",
@@ -47,7 +47,7 @@ questions = {
         "Answer4": "None of these",
         "Solution": "Both method and action"
     },
-    "Q07": {
+    "Q7": {
         "Question": "Markup tags tell the web browser ?",
         "Answer1": "How to organise the page",
         "Answer2": "How to display the page",
@@ -55,7 +55,7 @@ questions = {
         "Answer4": "None of these",
         "Solution": "How to display the page"
     },
-    "Q08": {
+    "Q8": {
         "Question": "www is based on which model ?",
         "Answer1": "Local-server",
         "Answer2": "Client-server",
@@ -63,7 +63,7 @@ questions = {
         "Answer4": "None of these",
         "Solution": "Client-server"
     },
-    "Q09": {
+    "Q9": {
         "Question": "What are Empty elements and is it valid ?",
         "Answer1": "No, there is no such terms as Empty Element",
         "Answer2": "Empty elements are element with no data",

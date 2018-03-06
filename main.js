@@ -50,25 +50,43 @@ function clearA(){
 var user_name = "XX"
 
 var score = 0
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
+// function checkTime(i) {
+//   if (i < 10) {
+//     i = "0" + i;
+//   }
+//   return i;
+// }
+
+// function startTime() {
+//   var today = new Date();
+//   var h = today.getHours();
+//   var m = today.getMinutes();
+//   var s = today.getSeconds();
+//   m = checkTime(m);
+//   s = checkTime(s);
+//   document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+//   t = setTimeout(function() {
+//     startTime()
+//   }, 500);
+// }
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  //if(m<0){alert('timer completed')}
+  if(m>=0){
+    document.getElementById('timer').innerHTML = m + ":" + s;
+    setTimeout(startTimer, 1000);
   }
-  return i;
 }
 
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  // add a zero in front of numbers<10
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-  t = setTimeout(function() {
-    startTime()
-  }, 500);
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
 }
 
 
@@ -98,13 +116,45 @@ function question(num){
     uName0.innerHTML = 'Remaining time : '
     document.getElementById("content-zz").appendChild(uName0);
 
-    var uName0 = document.createElement('div');
-    uName0.setAttribute('id','time')
-    uName0.innerHTML = 'ii '
+    var uName0 = document.createElement('h13');
+    uName0.setAttribute('style','font-size: 100%')
+    uName0.setAttribute('id','timer')
+    uName0.innerHTML = 02 + ":" + 00;
     document.getElementById("content-zz").appendChild(uName0);
-    startTime();
+    startTimer();
 
+    content = JSON.parse(JSON.stringify(questions));
+    console.log(content)
+    console.log(Object.keys(content).length)
+    all_questions = []
+    // console.log(num)
+    // for(i  = 0; i < num; i++ ){
+    //     console.log(i)
+    //     inn = 1 * Object.keys(content).length - 1
+    //     // inn = (Math.random()*(10))
+    //     Object.keys(content).length
+    //     all_questions.push(content["Q"+inn])
+    //     delete content["Q"+inn]
+    // }
+    // console.log(all_questions)
+    for(i  = 0; i <= Object.keys(content).length; i++ ){
+        all_questions.push(content["Q"+i])
+    }
+    resQ = []
+    console.log(all_questions[15])
+    for(i = 0; i< num; i++){
+        inn = ( (Math.random()) * (all_questions.length-1) ) + 1
+        inn = parseInt(inn)
+        resQ.push(all_questions[inn])
+        all_questions.splice(inn,1)
+        
+    }
+    console.log(resQ)
 }
+
+
+
+
 function chooseNumQ(){
     console.log("P")
     var uName0 = document.createElement('h1');
