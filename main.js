@@ -1,5 +1,25 @@
+  console.log("Start . . . ");
+//   $.getJSON('questions.json', function(json) {
+//     console.log('pp' );
+//   });
+//   $.ajax({
+//     url: 'questions.json',
+//     dataType: 'json',
+//     type: 'get',
+//     cache: false,
+//     success: function(data){
+//         console.log(data);
+//     }
+//   });
+  console.log('ddd',$.getJSON('./questions.json',function(data){
+    cosnole.log('data',data)
+  }))
+  console.log("Finish . . . ");
+
+
 var trivia_title = document.getElementById("trivia_title");
 var inputName = document.getElementById("inputName")
+
 
 var title_text = "Trivia"
 var title_count = 0
