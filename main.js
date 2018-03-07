@@ -11,7 +11,7 @@
 //         console.log(data);
 //     }
 //   });
-  console.log('ddd',$.getJSON('./questions.json',function(data){
+  console.log('ddd',$.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){
     cosnole.log('data',data)
   }))
   console.log("Finish . . . ");
