@@ -11,9 +11,11 @@
 //         console.log(data);
 //     }
 //   });
-//   $.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){
-//     console.log('data',data)
-//   })
+var dataZ = ""
+  $.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){
+    console.log('data',data)
+    dataZ = data
+  })
 // var r = $.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){})
 // console.log(r)
 
@@ -112,8 +114,12 @@ function checkSecond(sec) {
   return sec;
 }
 
-function chooseA(e) {
-    console.log(e)
+function chooseA(x) {
+    console.log(x)
+    var c = document.getElementById('A'+x)
+    console.log("PPP")
+    console.log(c)
+    c.setAttribute('style','color: yellow;')
 }
 var Qnum = 0
 var resQ = []
