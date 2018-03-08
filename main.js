@@ -119,7 +119,7 @@ function chooseA(x) {
     var c = document.getElementById('A'+x)
     console.log("PPP")
     console.log(c)
-    c.setAttribute('style','color: yellow;')
+    c.setAttribute('style','background-color: green; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
 }
 var Qnum = 0
 var resQ = []
