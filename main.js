@@ -11,9 +11,12 @@
 //         console.log(data);
 //     }
 //   });
-  console.log('ddd',$.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){
-    console.log('data',data.responseJSON)
-  }))
+//   $.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){
+//     console.log('data',data)
+//   })
+// var r = $.getJSON('https://kundjanasith.github.io/01219351-lab03/data/questions.json',function(data){})
+// console.log(r)
+
   console.log("Finish . . . ");
 
 
@@ -171,15 +174,15 @@ function question(num){
     all_questions = []
     
     // console.log(num)
-    // for(i  = 0; i < num; i++ ){
-    //     console.log(i)
-    //     inn = 1 * Object.keys(content).length - 1
-    //     // inn = (Math.random()*(10))
-    //     Object.keys(content).length
-    //     all_questions.push(content["Q"+inn])
-    //     delete content["Q"+inn]
-    // }
-    // console.log(all_questions)
+    for(i  = 0; i < num; i++ ){
+        console.log(i)
+        inn = 1 * Object.keys(content).length - 1
+        // inn = (Math.random()*(10))
+        Object.keys(content).length
+        all_questions.push(content["Q"+inn])
+        delete content["Q"+inn]
+    }
+    console.log(all_questions)
     for(i  = 0; i <= Object.keys(content).length; i++ ){
         all_questions.push(content["Q"+i])
     }
