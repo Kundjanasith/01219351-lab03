@@ -112,6 +112,7 @@ function startTimer() {
         if(sc<=Qnum){
         document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
         document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
+        document.getElementById("II").src = resQ[sc-1].URL
         document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
         document.getElementById("A1").innerText = resQ[sc-1].Answer1
         document.getElementById("A2").innerText = resQ[sc-1].Answer2
@@ -241,6 +242,7 @@ function submitAns(){
     if(sc<=Qnum){
         document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
         document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
+        document.getElementById("II").src = resQ[sc-1].URL
         document.getElementById("Q0").innerHTML = sc+') '+resQ[sc-1].Question
         document.getElementById("A1").innerHTML = resQ[sc-1].Answer1
         document.getElementById("A2").innerHTML = resQ[sc-1].Answer2
@@ -391,10 +393,17 @@ function question(num){
     }
     console.log(resQ)
     
+    var uName0 = document.createElement('img');
+    uName0.setAttribute('id','II');
+    uName0.setAttribute('style','width: 25%; height: 25% box-shadow: 0 0 20px white; text-align: text;');
+    uName0.src = resQ[0].URL
+    document.getElementById("content-z1").appendChild(uName0);
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
+    document.getElementById("content-z1").appendChild(document.createElement('br'));
     var uName0 = document.createElement('button');
     uName0.setAttribute('id','Q0');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: text;');
-    // uName0.disabled = true;
     uName0.innerHTML = '1) '+resQ[0].Question
     document.getElementById("content-z1").appendChild(uName0);
     document.getElementById("content-z1").appendChild(document.createElement('br'));

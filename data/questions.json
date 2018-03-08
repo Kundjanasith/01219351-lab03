@@ -5,7 +5,8 @@ questions = {
         "Answer2": "2^17 - 1",
         "Answer3": "2^19 - 1",
         "Answer4": "2^23 - 1",
-        "Solution": "2^23 - 1"
+        "Solution": "2^23 - 1",
+        "URL": "img/01.png"
     },
     "Q2": {
         "Question": "A Random Variable X follows a Normal distribution with mean 9 and standard deviation 2.5<br>Calculate P(9.9 &lt; X &lt; 12.1)",
@@ -13,7 +14,8 @@ questions = {
         "Answer2": "0.2481",
         "Answer3": "0.2519",
         "Answer4": "0.5331",
-        "Solution": "0.2519"
+        "Solution": "0.2519",
+        "URL": "img/02.png"
     },
     "Q3": {
         "Question": "Find the equation of the perpendicular bisector of the line segment joining A(-8, -3) and B(4, 6).",
@@ -21,7 +23,8 @@ questions = {
         "Answer2": "4y - 3x - 12 = 0",
         "Answer3": "6y - 8x + 7 = 0",
         "Answer4": "6y + 8x - 7 = 0",
-        "Solution": "6y + 8x + 7 = 0"
+        "Solution": "6y + 8x + 7 = 0",
+        "URL": "img/03.png"
     },
     "Q4": {
         "Question": "Patty wanted to find the volume of a spherical balloon. She measured the radius of the balloon as 3.6 m, but the actual radius was 3.45 m. What is the relative error in her volume calculation to the nearest thousandth?",
@@ -29,7 +32,8 @@ questions = {
         "Answer2": "0.126",
         "Answer3": "0.130",
         "Answer4": "0.136",
-        "Solution": "0.136"
+        "Solution": "0.136",
+        "URL": "img/04.png"
     },
     "Q5": {
         "Question": "Find the equation of the line passing through the point of intersection of the lines 2x + y - 3 = 0 and 5x + y - 6 = 0 and perpendicular to the line joining the points (1,2) and (2,1).",
@@ -37,7 +41,8 @@ questions = {
         "Answer2": "3x - 3y = 1",
         "Answer3": "x - y = 0",
         "Answer4": "3x + 3y = 1",
-        "Solution": "x - y = 0"
+        "Solution": "x - y = 0",
+        "URL": "img/05.png"
     },
     "Q6": {
         "Question": "The distance light travels in one year is approximately 5,870,000,000,000 miles. The distance light travels in 100 years is",
@@ -45,7 +50,8 @@ questions = {
         "Answer2": "587 x 10^10 miles",
         "Answer3": "587 x 10^-10 miles",
         "Answer4": "587 x 10^12 miles",
-        "Solution": "587 x 10^12 miles"
+        "Solution": "587 x 10^12 miles",
+        "URL": "img/06.png"
     },
     "Q7": {
         "Question": "20 % of 2 is equal to ",
@@ -53,7 +59,8 @@ questions = {
         "Answer2": "4",
         "Answer3": "0.4",
         "Answer4": "0.04",
-        "Solution": "0.4"
+        "Solution": "0.4",
+        "URL": "img/07.png"
     },
     "Q8": {
         "Question": "Estimate the sum of these mixed fractions by rounding each fraction to the nearest whole number: 34 5/6 + 188 2/7 =",
@@ -61,7 +68,8 @@ questions = {
         "Answer2": "221",
         "Answer3": "224",
         "Answer4": "223",
-        "Solution": "223"
+        "Solution": "223",
+        "URL": "img/08.png"
     },
     "Q9": {
         "Question": "The graphs of the two linear equations ax + by = c and bx - ay = c, where a, b and c are all not equal to zero",
@@ -69,7 +77,8 @@ questions = {
         "Answer2": "intersect at one point",
         "Answer3": "intersect at two points",
         "Answer4": "perpendicular",
-        "Solution": "perpendicular"
+        "Solution": "perpendicular",
+        "URL": "img/09.png"
     },
     "Q10": {
         "Question": "The mean of a data set is equal to 10 and its standard deviation is equal to 1. If we add 5 to each data value, then the mean and standard deviation become ",
@@ -77,7 +86,8 @@ questions = {
         "Answer2": "mean = 10 , standard deviation = 6",
         "Answer3": "mean = 15 , standard deviation = 1",
         "Answer4": "mean = 10 , standard deviation = 1",
-        "Solution": "mean = 15 , standard deviation = 1"
+        "Solution": "mean = 15 , standard deviation = 1",
+        "URL": "img/10.png"
     },
     "Q11": {
         "Question": "The exam scores of all 500 students were recorded and it was determined that these scores were normally distributed. If Jane's score is 0.8 standard deviation above the mean, then how many, to the nearest unit, students scored above Jane? ",
@@ -85,7 +95,8 @@ questions = {
         "Answer2": "intersect at one point",
         "Answer3": "intersect at two points",
         "Answer4": "perpendicular",
-        "Solution": "perpendicular"
+        "Solution": "perpendicular",
+        "URL": "img/11.png"
     },
     "Q12": {
         "Question": "The graphs of the two linear equations ax + by = c and bx - ay = c, where a, b and c are all not equal to zero",
@@ -93,7 +104,8 @@ questions = {
         "Answer2": "250",
         "Answer3": "400",
         "Answer4": "106",
-        "Solution": "106"
+        "Solution": "106",
+        "URL": "img/12.png"
     },
     "Q13": {
         "Question": "The period of | sin (3x) | is",
@@ -101,7 +113,8 @@ questions = {
         "Answer2": "2 pi / 3 ",
         "Answer3": "pi / 3 ",
         "Answer4": "3 pi",
-        "Solution": "pi / 3 "
+        "Solution": "pi / 3 ",
+        "URL": "img/13.png"
     },
     "Q14": {
         "Question": "The period of 2 sin x cos x is ",
@@ -109,7 +122,8 @@ questions = {
         "Answer2": "2 pi ",
         "Answer3": "4 pi ",
         "Answer4": " pi",
-        "Solution": " pi"
+        "Solution": " pi",
+        "URL": "img/14.png"
     },
     "Q15": {
         "Question": "The probability that an electronic device produced by a company does not function properly is equal to 0.1. If 10 devices are bought, then the probability, to the nearest thousandth, that 7 devices function properly is ",
@@ -117,7 +131,8 @@ questions = {
         "Answer2": "0.478",
         "Answer3": "0.001",
         "Answer4": "0",
-        "Solution": "0.057"
+        "Solution": "0.057",
+        "URL": "img/15.png"
     },
     "Q16": {
         "Question": "For x greater than or equal to zero and less than or equal to 2 pi, sin x and cos x are both decreasing on the intervals ",
@@ -125,7 +140,8 @@ questions = {
         "Answer2": "(pi/2 , pi) ",
         "Answer3": "(pi , 3 pi / 2) ",
         "Answer4": "(3 pi / 2 , 2 pi)",
-        "Solution": "(pi/2 , pi) "
+        "Solution": "(pi/2 , pi) ",
+        "URL": "img/16.png"
     },
     "Q17": {
         "Question": "In a square field trees are planted at the corners and one in the middle of each side. How many trees are planted",
@@ -133,7 +149,8 @@ questions = {
         "Answer2": "6",
         "Answer3": "8",
         "Answer4": "10",
-        "Solution": "8"
+        "Solution": "8",
+        "URL": "img/17.png"
     },
     "Q18": {
         "Question": "John had 10 balloons. He exchanged 2 blue balloons for 4 red balloons. How many balloons does he have now",
@@ -141,7 +158,8 @@ questions = {
         "Answer2": "8",
         "Answer3": "16",
         "Answer4": "14",
-        "Solution": "12"
+        "Solution": "12",
+        "URL": "img/18.png"
     },
     "Q19": {
         "Question": "A pizza was divided into 3 equal pieces and Mira ate one portion of it. Next day, a similar pizza was divided into 12 equal pieces. Mira claimed that she ate the same amount of Pizza as the previous day. How many pieces did she eat on the second day",
@@ -149,7 +167,8 @@ questions = {
         "Answer2": "4",
         "Answer3": "6",
         "Answer4": "2",
-        "Solution": "4"
+        "Solution": "4",
+        "URL": "img/19.png"
     },
     "Q20": {
         "Question": "Rima had 54 skirts, out of which 24 were blue. The remaining were white. She gave away some of her white skirts. Now she found that exactly half of her skirts were white. How many skirts did she give away",
@@ -157,6 +176,7 @@ questions = {
         "Answer2": "12",
         "Answer3": "6",
         "Answer4": "8",
-        "Solution": "6"
+        "Solution": "6",
+        "URL": "img/20.png"
     }
 }
