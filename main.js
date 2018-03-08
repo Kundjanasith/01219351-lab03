@@ -94,7 +94,7 @@ var score = 1
 //     startTime()
 //   }, 500);
 // }
-
+time_all = []
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
   var timeArray = presentTime.split(/[:]+/);
@@ -104,6 +104,34 @@ function startTimer() {
   //if(m<0){alert('timer completed')}
   if(m>=0){
     document.getElementById('timer').innerHTML = m + ":" + s;
+    if(m==0&&s==0){
+        var sc = document.getElementById("quest").innerHTML.split(":")[1].split("/")[0] 
+        sc = parseInt(sc)
+        sc = sc + 1
+        document.getElementById("c"+(sc-2)).setAttribute('class','circle_red');
+        if(sc<=Qnum){
+        document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
+        document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
+        document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
+        document.getElementById("A1").innerText = resQ[sc-1].Answer1
+        document.getElementById("A2").innerText = resQ[sc-1].Answer2
+        document.getElementById("A3").innerText = resQ[sc-1].Answer3
+        document.getElementById("A4").innerText = resQ[sc-1].Answer4
+        document.getElementById("A1").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A2").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A3").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A4").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("timer").innerHTML = 02 + ":" + 00;
+        document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum+"&nbsp;&nbsp;&nbsp;&nbsp;"
+        ss = (60-parseInt(0))
+        mm = (1-parseInt(2))
+        if(ss==60){
+            ss = 0
+            mm = mm + 1
+        }
+        time_all.push(mm + ":" + ss)
+      }
+    }
     setTimeout(startTimer, 1000);
   }
 }
@@ -154,9 +182,11 @@ function submitAns(){
         }
     }
     if(A=="A") return
-    document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
-    document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
+    var mm = document.getElementById("timer").innerHTML.split(":")[0]
+    var ss = document.getElementById("timer").innerHTML.split(":")[1]
     if(sc<=Qnum){
+        document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
+        document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
         document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
         document.getElementById("A1").innerText = resQ[sc-1].Answer1
         document.getElementById("A2").innerText = resQ[sc-1].Answer2
@@ -168,6 +198,40 @@ function submitAns(){
         document.getElementById("A4").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
         document.getElementById("timer").innerHTML = 02 + ":" + 00;
         document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum+"&nbsp;&nbsp;&nbsp;&nbsp;"
+        ss = (60-parseInt(ss))
+        mm = (1-parseInt(mm))
+        if(ss==60){
+            ss = 0
+            mm = mm + 1
+        }
+        time_all.push(mm + ":" + ss)
+        console.log(time_all)
+    }
+    if(sc==Qnum+1){
+        document.getElementById("rt").remove()
+        document.getElementById("timer").remove()
+        ss = (60-parseInt(ss))
+        mm = (1-parseInt(mm))
+        if(ss==60){
+            ss = 0
+            mm = mm + 1
+        }
+        time_all.push(mm + ":" + ss)
+        document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
+        var myNode = document.getElementById("content-z1");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+        document.getElementById("content-z1").appendChild(document.createElement('br'));
+        document.getElementById("content-z1").appendChild(document.createElement('br'));
+        for(var i=0 ; i<time_all.length ; i++){
+            var uName0 = document.createElement('button');
+            uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+            uName0.innerHTML = time_all[i]
+            document.getElementById("content-z1").appendChild(uName0);
+            document.getElementById("content-z1").appendChild(document.createElement('br'));
+            document.getElementById("content-z1").appendChild(document.createElement('br'));
+        }
     }
 }
 
@@ -202,6 +266,7 @@ function question(num){
     document.getElementById('c0').setAttribute('style','box-shadow: 0 0 20px yellow;');
     document.getElementById("content-zz").appendChild(document.createElement('br'));
     var uName0 = document.createElement('h13');
+    uName0.setAttribute('id','rt')
     uName0.setAttribute('style','font-size: 100%')
     uName0.innerHTML = 'Remaining time : '
     document.getElementById("content-zz").appendChild(uName0);
