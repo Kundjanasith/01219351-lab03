@@ -124,7 +124,7 @@ function startTimer() {
         document.getElementById("timer").innerHTML = 02 + ":" + 00;
         document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum+"&nbsp;&nbsp;&nbsp;&nbsp;"
         ss = (60-parseInt(0))
-        mm = (1-parseInt(2))
+        mm = (1-parseInt(0))
         if(ss==60){
             ss = 0
             mm = mm + 1
@@ -134,8 +134,8 @@ function startTimer() {
       if(sc==Qnum+1){
         document.getElementById("rt").remove()
         document.getElementById("timer").remove()
-        ss = (60-parseInt(ss))
-        mm = (1-parseInt(mm))
+        ss = (60-parseInt(0))
+        mm = (1-parseInt(0))
         if(ss==60){
             ss = 0
             mm = mm + 1
@@ -226,8 +226,8 @@ function submitAns(){
         console.log(temp)
         if(temp.style.backgroundColor=="white"){
             A = "B"
-            console.log(temp.innerText)
-            if(temp.innerText==resQ[sc-2].Solution){
+            console.log(temp.innerHTML)
+            if(temp.innerHTML==resQ[sc-2].Solution){
                 document.getElementById("c"+(sc-2)).setAttribute('class','circle_green')
             }
             else{
@@ -241,11 +241,11 @@ function submitAns(){
     if(sc<=Qnum){
         document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
         document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
-        document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
-        document.getElementById("A1").innerText = resQ[sc-1].Answer1
-        document.getElementById("A2").innerText = resQ[sc-1].Answer2
-        document.getElementById("A3").innerText = resQ[sc-1].Answer3
-        document.getElementById("A4").innerText = resQ[sc-1].Answer4
+        document.getElementById("Q0").innerHTML = sc+') '+resQ[sc-1].Question
+        document.getElementById("A1").innerHTML = resQ[sc-1].Answer1
+        document.getElementById("A2").innerHTML = resQ[sc-1].Answer2
+        document.getElementById("A3").innerHTML = resQ[sc-1].Answer3
+        document.getElementById("A4").innerHTML = resQ[sc-1].Answer4
         document.getElementById("A1").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
         document.getElementById("A2").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
         document.getElementById("A3").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
@@ -395,7 +395,7 @@ function question(num){
     uName0.setAttribute('id','Q0');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: text;');
     // uName0.disabled = true;
-    uName0.innerText = '1) '+resQ[0].Question
+    uName0.innerHTML = '1) '+resQ[0].Question
     document.getElementById("content-z1").appendChild(uName0);
     document.getElementById("content-z1").appendChild(document.createElement('br'));
     document.getElementById("content-z1").appendChild(document.createElement('br'));
@@ -404,7 +404,7 @@ function question(num){
     uName0.setAttribute('id','A1');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
     uName0.setAttribute('onclick','chooseA(1)');
-    uName0.innerText = resQ[0].Answer1
+    uName0.innerHTML = resQ[0].Answer1
     document.getElementById("content-z1").appendChild(uName0);
     document.getElementById("content-z1").appendChild(document.createElement('br'));
     document.getElementById("content-z1").appendChild(document.createElement('br'));
@@ -412,7 +412,7 @@ function question(num){
     uName0.setAttribute('id','A2');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
     uName0.setAttribute('onclick','chooseA(2)');
-    uName0.innerText = resQ[0].Answer2
+    uName0.innerHTML = resQ[0].Answer2
     document.getElementById("content-z1").appendChild(uName0);
     document.getElementById("content-z1").appendChild(document.createElement('br'));
     document.getElementById("content-z1").appendChild(document.createElement('br'));
@@ -420,7 +420,7 @@ function question(num){
     uName0.setAttribute('id','A3');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
     uName0.setAttribute('onclick','chooseA(3)');
-    uName0.innerText = resQ[0].Answer3
+    uName0.innerHTML = resQ[0].Answer3
     document.getElementById("content-z1").appendChild(uName0);
     document.getElementById("content-z1").appendChild(document.createElement('br'));
     document.getElementById("content-z1").appendChild(document.createElement('br'));
@@ -428,7 +428,7 @@ function question(num){
     uName0.setAttribute('id','A4');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
     uName0.setAttribute('onclick','chooseA(4)');
-    uName0.innerText = resQ[0].Answer4
+    uName0.innerHTML = resQ[0].Answer4
     document.getElementById("content-z1").appendChild(uName0);
     // button 
     document.getElementById("content-z1").appendChild(document.createElement('br'));

@@ -1,122 +1,162 @@
 questions = {
     "Q1": {
-        "Question": "The common element which describe the web page, is ?",
-        "Answer1": "heading",
-        "Answer2": "paragraph",
-        "Answer3": "list",
-        "Answer4": "All of these",
-        "Solution": "All of these"
+        "Question": "Which of the following is NOT a Mersenne Prime?",
+        "Answer1": "2^13 - 1",
+        "Answer2": "2^17 - 1",
+        "Answer3": "2^19 - 1",
+        "Answer4": "2^23 - 1",
+        "Solution": "2^23 - 1"
     },
     "Q2": {
-        "Question": "HTML stands for?",
-        "Answer1": "Hyper Text Markup Language",
-        "Answer2": "High Text Markup Language",
-        "Answer3": "Hyper Tabular Markup Language",
-        "Answer4": "None of these",
-        "Solution": "Hyper Text Markup Language"
+        "Question": "A Random Variable X follows a Normal distribution with mean 9 and standard deviation 2.5<br>Calculate P(9.9 &lt; X &lt; 12.1)",
+        "Answer1": "0.2295",
+        "Answer2": "0.2481",
+        "Answer3": "0.2519",
+        "Answer4": "0.5331",
+        "Solution": "0.2519"
     },
     "Q3": {
-        "Question": "which of the following tag is used to mark a begining of paragraph ?",
-        "Answer1": "<TD>",
-        "Answer2": "<br>",
-        "Answer3": "<P>",
-        "Answer4": "<TR>",
-        "Solution": "<P>"
+        "Question": "Find the equation of the perpendicular bisector of the line segment joining A(-8, -3) and B(4, 6).",
+        "Answer1": "6y + 8x + 7 = 0",
+        "Answer2": "4y - 3x - 12 = 0",
+        "Answer3": "6y - 8x + 7 = 0",
+        "Answer4": "6y + 8x - 7 = 0",
+        "Solution": "6y + 8x + 7 = 0"
     },
     "Q4": {
-        "Question": "From which tag descriptive list starts ?",
-        "Answer1": "<LL>",
-        "Answer2": "<DD>",
-        "Answer3": "<DL>",
-        "Answer4": "<DS>",
-        "Solution": "<DL>"
+        "Question": "Patty wanted to find the volume of a spherical balloon. She measured the radius of the balloon as 3.6 m, but the actual radius was 3.45 m. What is the relative error in her volume calculation to the nearest thousandth?",
+        "Answer1": "0.120",
+        "Answer2": "0.126",
+        "Answer3": "0.130",
+        "Answer4": "0.136",
+        "Solution": "0.136"
     },
     "Q5": {
-        "Question": "Correct HTML tag for the largest heading ?",
-        "Answer1": "<head>",
-        "Answer2": "<h6>",
-        "Answer3": "<heading>",
-        "Answer4": "<h1>",
-        "Solution": "<h1>"
+        "Question": "Find the equation of the line passing through the point of intersection of the lines 2x + y - 3 = 0 and 5x + y - 6 = 0 and perpendicular to the line joining the points (1,2) and (2,1).",
+        "Answer1": "x + y = 0",
+        "Answer2": "3x - 3y = 1",
+        "Answer3": "x - y = 0",
+        "Answer4": "3x + 3y = 1",
+        "Solution": "x - y = 0"
     },
     "Q6": {
-        "Question": "The attribute of <form> tag ?",
-        "Answer1": "Method",
-        "Answer2": "Action",
-        "Answer3": "Both method and action",
-        "Answer4": "None of these",
-        "Solution": "Both method and action"
+        "Question": "The distance light travels in one year is approximately 5,870,000,000,000 miles. The distance light travels in 100 years is",
+        "Answer1": "587 x 10^8 miles",
+        "Answer2": "587 x 10^10 miles",
+        "Answer3": "587 x 10^-10 miles",
+        "Answer4": "587 x 10^12 miles",
+        "Solution": "587 x 10^12 miles"
     },
     "Q7": {
-        "Question": "Markup tags tell the web browser ?",
-        "Answer1": "How to organise the page",
-        "Answer2": "How to display the page",
-        "Answer3": "How to display message box on page",
-        "Answer4": "None of these",
-        "Solution": "How to display the page"
+        "Question": "20 % of 2 is equal to ",
+        "Answer1": "20",
+        "Answer2": "4",
+        "Answer3": "0.4",
+        "Answer4": "0.04",
+        "Solution": "0.4"
     },
     "Q8": {
-        "Question": "www is based on which model ?",
-        "Answer1": "Local-server",
-        "Answer2": "Client-server",
-        "Answer3": "3-tier",
-        "Answer4": "None of these",
-        "Solution": "Client-server"
+        "Question": "Estimate the sum of these mixed fractions by rounding each fraction to the nearest whole number: 34 5/6 + 188 2/7 =",
+        "Answer1": "222",
+        "Answer2": "221",
+        "Answer3": "224",
+        "Answer4": "223",
+        "Solution": "223"
     },
     "Q9": {
-        "Question": "What are Empty elements and is it valid ?",
-        "Answer1": "No, there is no such terms as Empty Element",
-        "Answer2": "Empty elements are element with no data",
-        "Answer3": "No, it is not valid to use Empty Element",
-        "Answer4": "None of these",
-        "Solution": "Empty elements are element with no data"
+        "Question": "The graphs of the two linear equations ax + by = c and bx - ay = c, where a, b and c are all not equal to zero",
+        "Answer1": "are parallel",
+        "Answer2": "intersect at one point",
+        "Answer3": "intersect at two points",
+        "Answer4": "perpendicular",
+        "Solution": "perpendicular"
     },
     "Q10": {
-        "Question": "Which of the following attributes of text box control allow to limit the maximum character ?",
-        "Answer1": "size",
-        "Answer2": "len",
-        "Answer3": "maxlength",
-        "Answer4": "all of these",
-        "Solution": "maxlength"
+        "Question": "The mean of a data set is equal to 10 and its standard deviation is equal to 1. If we add 5 to each data value, then the mean and standard deviation become ",
+        "Answer1": "mean = 15 , standard deviation = 6",
+        "Answer2": "mean = 10 , standard deviation = 6",
+        "Answer3": "mean = 15 , standard deviation = 1",
+        "Answer4": "mean = 10 , standard deviation = 1",
+        "Solution": "mean = 15 , standard deviation = 1"
     },
     "Q11": {
-        "Question": "Web pages starts with which ofthe following tag ?",
-        "Answer1": "<Body>",
-        "Answer2": "<Title>",
-        "Answer3": "<HTML>",
-        "Answer4": "<Form>",
-        "Solution": "<HTML>"
+        "Question": "The exam scores of all 500 students were recorded and it was determined that these scores were normally distributed. If Jane's score is 0.8 standard deviation above the mean, then how many, to the nearest unit, students scored above Jane? ",
+        "Answer1": "are parallel",
+        "Answer2": "intersect at one point",
+        "Answer3": "intersect at two points",
+        "Answer4": "perpendicular",
+        "Solution": "perpendicular"
     },
     "Q12": {
-        "Question": "HTML is a subset of",
-        "Answer1": "SGMT",
-        "Answer2": "SGML",
-        "Answer3": "SGMD",
-        "Answer4": "None of these",
-        "Solution": "SGML"
+        "Question": "The graphs of the two linear equations ax + by = c and bx - ay = c, where a, b and c are all not equal to zero",
+        "Answer1": "394",
+        "Answer2": "250",
+        "Answer3": "400",
+        "Answer4": "106",
+        "Solution": "106"
     },
     "Q13": {
-        "Question": "Which of the following is a container ?",
-        "Answer1": "<SELECT>",
-        "Answer2": "<Value>",
-        "Answer3": "<INPUT>",
-        "Answer4": "<BODY>",
-        "Solution": "<SELECT>"
+        "Question": "The period of | sin (3x) | is",
+        "Answer1": "2 pi ",
+        "Answer2": "2 pi / 3 ",
+        "Answer3": "pi / 3 ",
+        "Answer4": "3 pi",
+        "Solution": "pi / 3 "
     },
     "Q14": {
-        "Question": "The attribute, which define the relationship between current document and HREF'ed URL is ?",
-        "Answer1": "REL",
-        "Answer2": "URL",
-        "Answer3": "REV",
-        "Answer4": "all of these",
-        "Solution": "REL"
+        "Question": "The period of 2 sin x cos x is ",
+        "Answer1": "4 pi ",
+        "Answer2": "2 pi ",
+        "Answer3": "4 pi ",
+        "Answer4": " pi",
+        "Solution": " pi"
     },
     "Q15": {
-        "Question": "<DT> tag is designed to fit a single line of our web page but <DD> tag will accept a",
-        "Answer1": "line of text",
-        "Answer2": "full paragraph",
-        "Answer3": "word",
-        "Answer4": "request",
-        "Solution": "full paragraph"
+        "Question": "The probability that an electronic device produced by a company does not function properly is equal to 0.1. If 10 devices are bought, then the probability, to the nearest thousandth, that 7 devices function properly is ",
+        "Answer1": "0.057",
+        "Answer2": "0.478",
+        "Answer3": "0.001",
+        "Answer4": "0",
+        "Solution": "0.057"
+    },
+    "Q16": {
+        "Question": "For x greater than or equal to zero and less than or equal to 2 pi, sin x and cos x are both decreasing on the intervals ",
+        "Answer1": "(0 , pi/2) ",
+        "Answer2": "(pi/2 , pi) ",
+        "Answer3": "(pi , 3 pi / 2) ",
+        "Answer4": "(3 pi / 2 , 2 pi)",
+        "Solution": "(pi/2 , pi) "
+    },
+    "Q17": {
+        "Question": "In a square field trees are planted at the corners and one in the middle of each side. How many trees are planted",
+        "Answer1": "4",
+        "Answer2": "6",
+        "Answer3": "8",
+        "Answer4": "10",
+        "Solution": "8"
+    },
+    "Q18": {
+        "Question": "John had 10 balloons. He exchanged 2 blue balloons for 4 red balloons. How many balloons does he have now",
+        "Answer1": "12",
+        "Answer2": "8",
+        "Answer3": "16",
+        "Answer4": "14",
+        "Solution": "12"
+    },
+    "Q19": {
+        "Question": "A pizza was divided into 3 equal pieces and Mira ate one portion of it. Next day, a similar pizza was divided into 12 equal pieces. Mira claimed that she ate the same amount of Pizza as the previous day. How many pieces did she eat on the second day",
+        "Answer1": "3",
+        "Answer2": "4",
+        "Answer3": "6",
+        "Answer4": "2",
+        "Solution": "4"
+    },
+    "Q20": {
+        "Question": "Rima had 54 skirts, out of which 24 were blue. The remaining were white. She gave away some of her white skirts. Now she found that exactly half of her skirts were white. How many skirts did she give away",
+        "Answer1": "15",
+        "Answer2": "12",
+        "Answer3": "6",
+        "Answer4": "8",
+        "Solution": "6"
     }
 }
