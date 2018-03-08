@@ -119,12 +119,17 @@ function chooseA(x) {
     var c = document.getElementById('A'+x)
     console.log("PPP")
     console.log(c)
-    c.setAttribute('style','background-color: green; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+    c.setAttribute('style','background-color: white; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: black;')
     all_p = [1,2,3,4]
     console.log(all_p)
     i = all_p.indexOf(x)
     all_p.splice(i, 1);
     console.log(all_p)
+    for(var i = 0; i < all_p.length; i++){
+        console.log(i)
+        var aa = document.getElementById('A'+all_p[i])
+        aa.setAttribute('style','background-color: black; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+    }
 }
 var Qnum = 0
 var resQ = []
@@ -132,14 +137,37 @@ function submitAns(){
     var sc = document.getElementById("quest").innerHTML.split(":")[1].split("/")[0] 
     sc = parseInt(sc)
     sc = sc + 1
+    all_p = ["A1","A2","A3","A4"]
+    A = "A"
+    for(var t=0 ; t<all_p.length ; t++){
+        var temp = document.getElementById(all_p[t])
+        console.log(temp)
+        if(temp.style.backgroundColor=="white"){
+            A = "B"
+            console.log(temp.innerText)
+            if(temp.innerText==resQ[sc-2].Solution){
+                document.getElementById("c"+(sc-2)).setAttribute('class','circle_green')
+            }
+            else{
+                document.getElementById("c"+(sc-2)).setAttribute('class','circle_red')
+            }
+        }
+    }
+    if(A=="A") return
+    document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
+    document.getElementById("c"+(sc-1)).setAttribute('style','box-shadow: 0 0 20px yellow');
     if(sc<=Qnum){
         document.getElementById("Q0").innerText = sc+') '+resQ[sc-1].Question
         document.getElementById("A1").innerText = resQ[sc-1].Answer1
         document.getElementById("A2").innerText = resQ[sc-1].Answer2
         document.getElementById("A3").innerText = resQ[sc-1].Answer3
         document.getElementById("A4").innerText = resQ[sc-1].Answer4
+        document.getElementById("A1").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A2").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A3").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+        document.getElementById("A4").setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
         document.getElementById("timer").innerHTML = 02 + ":" + 00;
-        document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum
+        document.getElementById("quest").innerHTML = "Question : "+sc+" / "+Qnum+"&nbsp;&nbsp;&nbsp;&nbsp;"
     }
 }
 
@@ -163,8 +191,15 @@ function question(num){
     var uName0 = document.createElement('h13');
     uName0.setAttribute('id','quest');
     uName0.setAttribute('style','font-size: 150%')
-    uName0.innerHTML = 'Question : '+score+' / '+num
+    uName0.innerHTML = 'Question : '+score+' / '+num+'&nbsp;&nbsp;&nbsp;&nbsp;'
     document.getElementById("content-zz").appendChild(uName0);
+    for( i=0 ; i<num ; i++){
+        var uName0 = document.createElement('div');
+        uName0.setAttribute('id','c'+i);
+        uName0.setAttribute('class','circle_grey');
+        document.getElementById("content-zz").appendChild(uName0);
+    }
+    document.getElementById('c0').setAttribute('style','box-shadow: 0 0 20px yellow;');
     document.getElementById("content-zz").appendChild(document.createElement('br'));
     var uName0 = document.createElement('h13');
     uName0.setAttribute('style','font-size: 100%')
@@ -202,7 +237,7 @@ function question(num){
     console.log("ALL")
     console.log(all_questions[15])
     for(i = 0; i< num; i++){
-        inn = ( (1) * (all_questions.length-1) ) + 1
+        inn = ( (Math.random()) * (all_questions.length-1) ) + 1
         inn = parseInt(inn)
         resQ.push(all_questions[inn])
         all_questions.splice(inn,1)
@@ -253,7 +288,7 @@ function question(num){
     document.getElementById("content-z1").appendChild(document.createElement('br'));
     var uName0 = document.createElement('button');
     uName0.setAttribute('id','submit');
-    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px green; text-align: center; color: white;');
+    uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px blue; text-align: center; color: white;');
     uName0.setAttribute('onclick','submitAns()');
     uName0.innerHTML = 'Submit'
     document.getElementById("content-z1").appendChild(uName0);
