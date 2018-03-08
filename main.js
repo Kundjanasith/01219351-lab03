@@ -120,6 +120,10 @@ function chooseA(x) {
     console.log("PPP")
     console.log(c)
     c.setAttribute('style','background-color: green; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
+    all_p = [1,2,3,4]
+    console.log(all_p)
+    all_p.remove(x)
+    console.log(all_p)
 }
 var Qnum = 0
 var resQ = []
