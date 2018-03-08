@@ -131,6 +131,60 @@ function startTimer() {
         }
         time_all.push(mm + ":" + ss)
       }
+      if(sc==Qnum+1){
+        document.getElementById("rt").remove()
+        document.getElementById("timer").remove()
+        ss = (60-parseInt(ss))
+        mm = (1-parseInt(mm))
+        if(ss==60){
+            ss = 0
+            mm = mm + 1
+        }
+        time_all.push(mm + ":" + ss)
+        document.getElementById("c"+(sc-2)).setAttribute('style','box-shadow: 0 0 0px yellow');
+        var myNode = document.getElementById("content-z1");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+        document.getElementById("content-z1").appendChild(document.createElement('br'));
+        document.getElementById("content-z1").appendChild(document.createElement('br'));
+        c_a = 0
+        i_a = 0
+        ti_m = 0
+        ti_s = 0
+        for(var i=0 ; i<time_all.length ; i++){
+            var uName0 = document.createElement('button');
+            // uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+            var c = document.getElementById("c"+i)
+            console.log(c.className)
+            console.log(Qnum)
+            if(c.className=="circle_green"){
+                c_a = c_a + 1
+                uName0.innerHTML = "Quetion ("+(i+1)+") Correct answer | time : "
+                uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px green; text-align: center; color: white;');
+            }
+            if(c.className=="circle_red"){
+                i_a = i_a + 1
+                uName0.innerHTML = "Quetion ("+(i+1)+") Incorrect answer | time : "
+                uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px red; text-align: center; color: white;');
+            }
+            ti_m = ti_m + parseInt(time_all[i].split(":")[0])
+            ti_s = ti_s + parseInt(time_all[i].split(":")[1])
+            uName0.innerHTML = uName0.innerHTML + time_all[i]
+            document.getElementById("content-z1").appendChild(uName0);
+            document.getElementById("content-z1").appendChild(document.createElement('br'));
+            document.getElementById("content-z1").appendChild(document.createElement('br'));
+        }
+        ty = (((ti_m)*60)+ti_s)/Qnum
+        ti_ss = parseInt(ti_s)%60
+        ti_m = parseInt(ti_m)+parseInt((parseInt(ti_s)/60))
+        ty_s = parseInt(ty)%60
+        ty_m = parseInt(parseInt(ty)/60)
+        var uName0 = document.createElement('button');
+        uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: center; color: white;');
+        uName0.innerHTML = "Total questions : "+Qnum+"<br>Total correct answer : "+c_a+"<br>Total incorrect answer : "+i_a+"<br>Total time : "+ti_m+":"+ti_s+"<br>Average time spent for each question : "+ty_m+":"+ty_s
+        document.getElementById("content-z1").appendChild(uName0);
+      }
     }
     setTimeout(startTimer, 1000);
   }
@@ -224,14 +278,42 @@ function submitAns(){
         }
         document.getElementById("content-z1").appendChild(document.createElement('br'));
         document.getElementById("content-z1").appendChild(document.createElement('br'));
+        c_a = 0
+        i_a = 0
+        ti_m = 0
+        ti_s = 0
         for(var i=0 ; i<time_all.length ; i++){
             var uName0 = document.createElement('button');
-            uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
-            uName0.innerHTML = time_all[i]
+            // uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;');
+            var c = document.getElementById("c"+i)
+            console.log(c.className)
+            console.log(Qnum)
+            if(c.className=="circle_green"){
+                c_a = c_a + 1
+                uName0.innerHTML = "Quetion ("+(i+1)+") Correct answer | time : "
+                uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px green; text-align: center; color: white;');
+            }
+            if(c.className=="circle_red"){
+                i_a = i_a + 1
+                uName0.innerHTML = "Quetion ("+(i+1)+") Incorrect answer | time : "
+                uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px red; text-align: center; color: white;');
+            }
+            ti_m = ti_m + parseInt(time_all[i].split(":")[0])
+            ti_s = ti_s + parseInt(time_all[i].split(":")[1])
+            uName0.innerHTML = uName0.innerHTML + time_all[i]
             document.getElementById("content-z1").appendChild(uName0);
             document.getElementById("content-z1").appendChild(document.createElement('br'));
             document.getElementById("content-z1").appendChild(document.createElement('br'));
         }
+        ty = (((ti_m)*60)+ti_s)/Qnum
+        ti_ss = parseInt(ti_s)%60
+        ti_m = parseInt(ti_m)+parseInt((parseInt(ti_s)/60))
+        ty_s = parseInt(ty)%60
+        ty_m = parseInt(parseInt(ty)/60)
+        var uName0 = document.createElement('button');
+        uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: center; color: white;');
+        uName0.innerHTML = "Total questions : "+Qnum+"<br>Total correct answer : "+c_a+"<br>Total incorrect answer : "+i_a+"<br>Total time : "+ti_m+":"+ti_s+"<br>Average time spent for each question : "+ty_m+":"+ty_s
+        document.getElementById("content-z1").appendChild(uName0);
     }
 }
 
