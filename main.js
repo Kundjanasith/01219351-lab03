@@ -122,7 +122,8 @@ function chooseA(x) {
     c.setAttribute('style','background-color: green; width: 100%; box-shadow: 0 0 20px yellow; text-align: center; color: white;')
     all_p = [1,2,3,4]
     console.log(all_p)
-    all_p.remove(x)
+    i = all_p.indexOf(x)
+    all_p.splice(i, 1);
     console.log(all_p)
 }
 var Qnum = 0
@@ -184,28 +185,30 @@ function question(num){
     all_questions = []
     
     // console.log(num)
-    for(i  = 0; i < num; i++ ){
-        console.log(i)
-        inn = 1 * Object.keys(content).length - 1
-        // inn = (Math.random()*(10))
-        Object.keys(content).length
-        all_questions.push(content["Q"+inn])
-        delete content["Q"+inn]
-    }
-    console.log(all_questions)
+    // for(i  = 0; i < num; i++ ){
+    //     console.log(i)
+    //     inn = 1 * Object. keys(content).length - 1
+    //     // inn = (Math.random()*(10))
+    //     Object.keys(content).length
+    //     all_questions.push(content["Q"+inn])
+    //     delete content["Q"+inn]
+    // }
+    // console.log(all_questions)
+
     for(i  = 0; i <= Object.keys(content).length; i++ ){
         all_questions.push(content["Q"+i])
     }
     
+    console.log("ALL")
     console.log(all_questions[15])
     for(i = 0; i< num; i++){
-        inn = ( (Math.random()) * (all_questions.length-1) ) + 1
+        inn = ( (1) * (all_questions.length-1) ) + 1
         inn = parseInt(inn)
         resQ.push(all_questions[inn])
         all_questions.splice(inn,1)
-        
     }
     console.log(resQ)
+    
     var uName0 = document.createElement('button');
     uName0.setAttribute('id','Q0');
     uName0.setAttribute('style','width: 100%; box-shadow: 0 0 20px white; text-align: text;');
